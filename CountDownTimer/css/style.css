@@ -35,17 +35,20 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 h1{
     font-size: 4rem;
     font-weight: 400;
     color: #ffffff;
     margin: -10rem 0rem 0rem;
+    text-align: center;
 }
 .countdown-container{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .big-text{
     font-size: 4rem;
@@ -70,7 +73,8 @@ h1{
     width: 76px;
 }
 .count-element:nth-child(4) p{
-    width: 76px;
+    width: 78px;
+    margin: auto;
 }
 .count-element span{
     font-size: 1.5rem;
