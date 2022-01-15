@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz App</title>
+         <!-- == Favicon == -->
+    <link rel="shortcut icon" href="css/img/js.png">
+
+    <!-- == Style Sheet == -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- == Fonts == -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="complete-container" id="complete-container">
+            <div class="tick">
+                <span id="tick-done"><img src="css/img/tick.png" width="55px" alt=""></span>
+                <p id="tick-p">Complete</p>
+            </div>
+        </div>
+        <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+                <div class="header">
+                    <h2 id="question">Question text</h2>
+                    <span>Choose the correct answer only.</span>
+                </div>
+                <ul>
+                    <li>
+                        <input
+                            type="radio"
+                            id="a"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="a_text" for="a">Question</label>
+                    </li>
+                    <li>
+                        <input
+                            type="radio"
+                            id="b"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="b_text" for="b">Question</label>
+                    </li>
+                    <li>
+                        <input
+                            type="radio"
+                            id="c"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="c_text" for="c">Question</label>
+                    </li>
+                    <li>
+                        <input
+                            type="radio"
+                            id="d"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="d_text" for="d">Question</label>
+                    </li>
+                </ul>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    transition: all ease 400ms;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh !important;
+    min-width: 100vw !important;
+    background-color: #eff2f7;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.complete-container{
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 40px 0px;
+    border-radius: 4px;
+    display: none;
+}
+.tick{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@keyframes showSlow {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.tick span{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #eff2f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tick span.active{
+    animation: showSlow 2000ms;
+}
+.tick p.sticky{
+    animation: showSlow 3000ms;
+}
+.tick p{
+    margin: 10px 0px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    color: #4e4e4e;
+    animation: showSlow 2000;
+}
+.quiz-container{
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 20px 0px 0px;
+    border-radius: 4px;
+    text-align: center !important;
+}
+ul{
+    padding: 20px 0px 0px;
+    max-width: 400px !important;
+    text-align: left !important;
+}
+.header{
+    padding: 0px 20px;
+}
+h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #4e4e4e;
+    text-align: center;
+    margin: 40px 0px 0px;
+}
+span{
+    font-size: 12px;
+    font-weight: 500;
+    color: #7d7d7d;
+    text-align: center;
+    margin: 0px 0px;
+}
+li{
+    height: fit-content;
+    padding: 8px 30px;
+    display: flex;
+    align-items: center;
+}
+label{
+    font-size: 13px;
+    font-weight: 500;
+    color: #4e4e4e;
+    margin: 0px 8px 0px;
+    cursor: pointer;
+}
+button{
+    height: 50px;
+    width: 100%;
+    border: 0;
+    outline: none;
+    margin: 20px 0px 0px; 
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #85d12c;
+}
+button:hover{
+    cursor: pointer;
+    transform: all ease 100ms;
+    background-color: #61a513;
+}
+input{
+    height: 18px !important;
+    width: 18px !important;
+    border-radius: 50%;
+    border: 1px solid #f9f9f9;
+    cursor: pointer;
+}
+.done-container{
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.done-container button{
+    height: 50px;
+    width: 120px;
+    border: 0;
+    outline: none;
+    margin: 20px 0px 20px; 
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.reload-btn{
+    background-color: #7d7d7d;
+}
+.reload-btn:hover{
+    background-color: #4d4d4d;
+    color: #ffffff;
+}
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .quiz-container{
+        width: 300px;
+    }
+    .complete-container{
+        width: 300px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .quiz-container{
+        width: 400px;
+    }
+    .complete-container{
+        width: 400px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .quiz-container{
+        width: 400px;
+    }
+    .complete-container{
+        width: 400px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .quiz-container{
+        width: 400px;
+    }
+    .complete-container{
+        width: 400px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .quiz-container{
+        width: 400px;
+    }
+    .complete-container{
+        width: 400px;
+    }
+}
